@@ -22,22 +22,7 @@ body{background-color: #f5f5f5; background-size:cover}
 <?php wp_head(); ?>
 </head><body <?php body_class(); ?>><?php wp_body_open(); ?><div id="page">
 
-<div class="site-title"><div class="site-title-bg">
-<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-<?php
-$blank_description = get_bloginfo( 'description', 'display' );
-if ( $blank_description || is_customize_preview() ) :
-	?>
-	<p class="site-description"><?php echo esc_html( $blank_description ); ?></p>
-<?php endif; ?>
-</div></div>
-<?php the_custom_logo(); ?>
-<footer id="colophon" class="site-footer">
-	<?php if ( get_theme_mod( 'blank_show_copyright', true ) ) : ?>
-	<div class="site-info">
-		<?php echo wp_kses_post( get_theme_mod( 'blank_copyright', __( 'Intentionally Blank - Proudly powered by WordPress', 'intentionally-blank' ) ) ); ?>
-	</div>
-	<?php endif; ?>
-</footer>
+<?php the_content();?>
+
 </div><!-- #page -->
 <?php wp_footer(); ?></body></html>
