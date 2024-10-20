@@ -3,7 +3,7 @@
  * Intentionally Blank Theme functions
  *
  * @package WordPress
- * @subpackage intentionally-blank
+ * @subpackage blank-for-apps
  */
 
 if ( ! function_exists( 'blank_setup' ) ) :

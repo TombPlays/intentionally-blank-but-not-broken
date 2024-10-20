@@ -3,7 +3,7 @@
  * The base (and only) template
  *
  * @package WordPress
- * @subpackage intentionally-blank
+ * @subpackage blank-for-apps
  */
 
 ?><!DOCTYPE html>
